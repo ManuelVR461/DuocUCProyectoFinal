@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>mercadopublico_as</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>QOW1AWbZWUNhklZdZL30B3pYYj8=02-11-2023 21:33:4802-11-2023 21:33:48</TimeStamp>
+        <ID>
+          <String>Mp Estrella Db</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>daGJPFnPO5OXq48g7n2rgVTavmI=02-11-2023 21:36:3602-11-2023 21:36:36</TimeStamp>
+        <ID>
+          <String>Mp Estrella Db</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8HBLHfqs3CyH/B0EHFulCQVgWmE=02-11-2023 21:38:5502-11-2023 21:37:58</TimeStamp>
+        <ID>
+          <String>Dim Zona</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Z+B6mKg1oSW2r/bfbCXkPVKVYa4=02-11-2023 21:39:2602-11-2023 21:37:58</TimeStamp>
+        <ID>
+          <String>Dim Fecha</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+vmg4LJmu/A5twohtOkpW8+o+Lw=02-11-2023 21:39:4102-11-2023 21:37:58</TimeStamp>
+        <ID>
+          <String>Dim Rubro</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zJMnxRi0gewyzIXtgFwZe7YnaxU=02-11-2023 21:39:5102-11-2023 21:37:58</TimeStamp>
+        <ID>
+          <String>Dim Producto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OFgD/LJuJ2L4KDnA7echiHpNY0k=02-11-2023 21:40:0302-11-2023 21:37:58</TimeStamp>
+        <ID>
+          <String>Dim Proveedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gfx13ao9ZeESZbQT7Jc8rkNRWqM=02-11-2023 21:40:1202-11-2023 21:37:58</TimeStamp>
+        <ID>
+          <String>Dim Moneda</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TE6AzpL2A6Emenz1pVjVoZhFFHc=02-11-2023 21:40:5402-11-2023 21:37:58</TimeStamp>
+        <ID>
+          <String>Dim Unidad</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>z6BKg6DqpTnqkyGgmDr3OKvROKo=02-11-2023 21:40:5402-11-2023 21:37:58NcMb/uwNWS9jksHMSD/SbD1/jGQ=02-11-2023 21:37:5802-11-2023 21:37:58</TimeStamp>
+        <ID>
+          <String>Mp Estrella Db</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>a4mWEbOLp2rgZwmhe4G8Nhjw1Jk=02-11-2023 21:17:3502-11-2023 21:17:35</TimeStamp>
+      <ID>
+        <String>mercadopublico_as</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-11-03T01:14:35.103333Z</LastDeployed>
+</DeploymentSnapshot>
