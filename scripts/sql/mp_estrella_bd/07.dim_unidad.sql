@@ -5,26 +5,27 @@ CREATE TABLE mp_estrella_db.dbo.dim_unidad (
 	rut              varchar(15) not null,
 	nombre           varchar(255) not null,
 	organismo        varchar(255) not null,
-	sector           varchar(255) not null,
+	id_sector        int not null,
 	CONSTRAINT PK_unidad PRIMARY KEY (id_unidad)
 );
 
 WITH UnidadesConNumerosDeFila AS (
     SELECT DISTINCT
-           CodigoUnidad,
-           RutUnidad,
-           NombreUnidad,
-           NombreOrganismo,
-           Sector,
-           ROW_NUMBER() OVER (PARTITION BY CodigoUnidad ORDER BY CodigoUnidad, RutUnidad, NombreUnidad) AS NumeroDeFila
+           l.CodigoUnidad,
+           l.RutUnidad,
+           l.NombreUnidad,
+           l.NombreOrganismo,
+           s.id_sector,
+           ROW_NUMBER() OVER (PARTITION BY l.CodigoUnidad ORDER BY l.CodigoUnidad, l.RutUnidad, l.NombreUnidad) AS NumeroDeFila
       FROM mercadopublico.dbo.licitaciones l
-)
+     INNER JOIN mp_estrella_db.dbo.dim_sector s
+             ON s.sector = l.sector)
 INSERT INTO mp_estrella_db.dbo.dim_unidad
 SELECT CodigoUnidad,
        RutUnidad,
        NombreUnidad,
        NombreOrganismo,
-       Sector
+       id_sector
 FROM UnidadesConNumerosDeFila
 WHERE NumeroDeFila = 1;
 

@@ -1,6 +1,6 @@
 IF OBJECT_ID('mercadopublico.mpp.Unidad', 'U') IS NOT NULL
 	DROP TABLE mercadopublico.mpp.Unidad;
-
+GO
 CREATE TABLE mercadopublico.mpp.Unidad (
 	CodigoUnidad int NOT NULL,
 	RutUnidad varchar(255) NULL,
@@ -11,6 +11,7 @@ CREATE TABLE mercadopublico.mpp.Unidad (
     idComuna int,
 	CONSTRAINT unidad_PK PRIMARY KEY (CodigoUnidad)
 );
+GO
 
 WITH UnidadesConNumerosDeFila AS (
 	SELECT DISTINCT
@@ -62,7 +63,7 @@ WITH UnidadesConNumerosDeFila AS (
 				WHEN 'Chillán' THEN 16101 WHEN 'Chillan' THEN 16101 WHEN 'Bulnes' THEN 16102 WHEN 'Chillán Viejo' THEN 16103 WHEN 'Chillan Viejo' THEN 16103 WHEN 'El Carmen' THEN 16104 WHEN 'Pemuco' THEN 16105 WHEN 'Pinto' THEN 16106 WHEN 'Quillón' THEN 16107 WHEN 'Quillon' THEN 16107 WHEN 'San Ignacio' THEN 16108 WHEN 'Yungay' THEN 16109 WHEN 'Quirihue' THEN 16201 WHEN 'Cobquecura' THEN 16202 WHEN 'Coelemu' THEN 16203 WHEN 'Ninhue' THEN 16204 WHEN 'Portezuelo' THEN 16205 WHEN 'Ránquil' THEN 16206 WHEN 'Ranquil' THEN 16206 WHEN 'Treguaco' THEN 16207 WHEN 'Trehuaco' THEN 16207 WHEN 'San Carlos' THEN 16301 WHEN 'Coihueco' THEN 16302 WHEN 'Ñiquén' THEN 16303 WHEN 'Niquen' THEN 16303 WHEN 'San Fabián' THEN 16304 WHEN 'San Fabian' THEN 16304 WHEN 'San Nicolás' THEN 16305 WHEN 'San Nicolas' THEN 16305
 				ELSE null
 		   END as idComuna,
-        ROW_NUMBER() OVER (PARTITION BY CodigoUnidad ORDER BY CodigoUnidad, RutUnidad, NombreUnidad) AS NumeroDeFila
+        ROW_NUMBER() OVER (PARTITION BY CodigoUnidad ORDER BY FechaPublicacion DESC) AS NumeroDeFila
 	  FROM mercadopublico.dbo.licitaciones l
 )
 INSERT INTO mercadopublico.mpp.Unidad

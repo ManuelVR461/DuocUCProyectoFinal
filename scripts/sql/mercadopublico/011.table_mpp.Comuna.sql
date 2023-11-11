@@ -1,9 +1,14 @@
+IF OBJECT_ID('mercadopublico.mpp.Comuna', 'U') IS NOT NULL
+	DROP TABLE mercadopublico.mpp.Comuna;
+GO
+
 CREATE TABLE mercadopublico.mpp.Comuna (
 	idComuna int NOT NULL,
 	nombre varchar(255),
 	idRegion int NOT NULL,
 	CONSTRAINT comuna_PK PRIMARY KEY (idComuna)
 );
+GO
 
 INSERT INTO mercadopublico.mpp.Comuna (idComuna, nombre, idRegion) VALUES (1101, 'Iquique', 1);
 INSERT INTO mercadopublico.mpp.Comuna (idComuna, nombre, idRegion) VALUES (1107, 'Alto Hospicio', 1);

@@ -17,12 +17,12 @@ CREATE TABLE mp_estrella_db.dbo.fact_licitacion (
     monto_adjudicado_eur numeric(36, 0) not null,
     monto_adjudicado_utm numeric(36, 0) not null,
     monto_adjudicado_uf  numeric(36, 0) not null
-	CONSTRAINT FK_fecha    FOREIGN KEY (id_fecha)      REFERENCES dim_fecha(id_fecha),
-	CONSTRAINT FK_rubro    FOREIGN KEY (id_rubro)      REFERENCES dim_rubro(id_rubro),
-	CONSTRAINT FK_producto FOREIGN KEY (id_producto)   REFERENCES dim_producto(id_producto),
-	CONSTRAINT FK_zona     FOREIGN KEY (id_zona)       REFERENCES dim_zona(id_zona),
-	CONSTRAINT FK_unidad   FOREIGN KEY (id_unidad)     REFERENCES dim_unidad(id_unidad),
-	CONSTRAINT FK_moneda   FOREIGN KEY (codigo_moneda) REFERENCES dim_moneda(codigo_moneda)
+	CONSTRAINT FK_fecha_licitacion    FOREIGN KEY (id_fecha)      REFERENCES dim_fecha(id_fecha),
+	CONSTRAINT FK_rubro_licitacion    FOREIGN KEY (id_rubro)      REFERENCES dim_rubro(id_rubro),
+	CONSTRAINT FK_producto_licitacion FOREIGN KEY (id_producto)   REFERENCES dim_producto(id_producto),
+	CONSTRAINT FK_zona_licitacion     FOREIGN KEY (id_zona)       REFERENCES dim_zona(id_zona),
+	CONSTRAINT FK_unidad_licitacion   FOREIGN KEY (id_unidad)     REFERENCES dim_unidad(id_unidad),
+	CONSTRAINT FK_moneda_licitacion   FOREIGN KEY (codigo_moneda) REFERENCES dim_moneda(codigo_moneda)
 );
 
 WITH Temporal AS (

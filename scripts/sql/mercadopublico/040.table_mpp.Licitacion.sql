@@ -7,7 +7,7 @@ IF EXISTS (
 BEGIN
     ALTER TABLE mercadopublico.mpp.EstadosLicitacion DROP CONSTRAINT FK_EstadosLicitacion_Licitacion;
 END
-
+GO
 IF EXISTS (
     SELECT * 
     FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS 
@@ -17,6 +17,7 @@ IF EXISTS (
 BEGIN
     ALTER TABLE mercadopublico.mpp.Oferta DROP CONSTRAINT FK_Oferta_Licitacion;
 END
+GO
 
 IF EXISTS (
     SELECT * 
@@ -27,6 +28,7 @@ IF EXISTS (
 BEGIN
     ALTER TABLE mercadopublico.mpp.Licitacion DROP CONSTRAINT FK_Licitacion_TipoAdquisicion;
 END
+GO
 
 IF EXISTS (
     SELECT * 
@@ -37,6 +39,7 @@ IF EXISTS (
 BEGIN
     ALTER TABLE mercadopublico.mpp.Licitacion DROP CONSTRAINT FK_Licitacion_Moneda;
 END
+GO
 
 IF EXISTS (
     SELECT * 
@@ -47,27 +50,25 @@ IF EXISTS (
 BEGIN
     ALTER TABLE mercadopublico.mpp.Licitacion DROP CONSTRAINT FK_Licitacion_Modalidad;
 END
+GO
 
 DROP TABLE IF EXISTS mercadopublico.mpp.Licitacion;
+GO
 	
 CREATE TABLE mercadopublico.mpp.Licitacion (
 	codigoLicitacion int NOT NULL,
-	codigoExterno varchar(255) NULL,
-	nombre varchar(255) NULL,
-	descripcion varchar(MAX) NULL,
+	codigoUnidad int,
 	idTipoAdquisicion INT,
-	codigoMoneda char(3),
-	montoEstimado numeric(36, 18),
 	idModalidad int,
 	subContratacion int,
 	extensionPlazo int,
 	esRenovable int,
-	codigoUnidad int,
 	CONSTRAINT licitacion_PK PRIMARY KEY (codigoLicitacion)
 );
+GO
 
 INSERT INTO mercadopublico.mpp.Licitacion
-SELECT DISTINCT l.Codigo, l.CodigoExterno, l.Nombre, l.Descripcion, ta.idTipoAdquisicion, l.codigoMoneda, l.montoEstimado, m.idModalidad, l.subContratacion, l.ExtensionPlazo, l.EsRenovable, l.CodigoUnidad
+SELECT DISTINCT l.Codigo, l.CodigoUnidad, ta.idTipoAdquisicion, m.idModalidad, l.subContratacion, l.ExtensionPlazo, l.EsRenovable
   FROM mercadopublico.dbo.licitaciones l
   LEFT JOIN mercadopublico.mpp.TipoAdquisicion ta
          ON ta.nombre = l.TipodeAdquisicion
@@ -78,10 +79,6 @@ SELECT DISTINCT l.Codigo, l.CodigoExterno, l.Nombre, l.Descripcion, ta.idTipoAdq
 ALTER TABLE mercadopublico.mpp.Licitacion
 ADD CONSTRAINT FK_Licitacion_TipoAdquisicion FOREIGN KEY (idTipoAdquisicion)
 REFERENCES mercadopublico.mpp.TipoAdquisicion(idTipoAdquisicion);
-
-ALTER TABLE mercadopublico.mpp.Licitacion
-ADD CONSTRAINT FK_Licitacion_Moneda FOREIGN KEY (CodigoMoneda)
-REFERENCES mercadopublico.mpp.Moneda(CodigoMoneda);
 
 ALTER TABLE mercadopublico.mpp.Licitacion
 ADD CONSTRAINT FK_Licitacion_Modalidad FOREIGN KEY (idModalidad)

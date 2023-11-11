@@ -1,9 +1,14 @@
+IF OBJECT_ID('mercadopublico.mpp.Rubro', 'U') IS NOT NULL
+	DROP TABLE mercadopublico.mpp.Rubro;
+GO
+
 CREATE TABLE mercadopublico.mpp.Rubro (
 	idRubro INT IDENTITY(1,1) NOT NULL,
 	nombre varchar(255),
 	idRubroSuperior INT NULL,
     CONSTRAINT rubro_PK PRIMARY KEY (idRubro)
 );
+GO
 
 INSERT INTO mercadopublico.mpp.Rubro(nombre)
 SELECT DISTINCT Rubro1
