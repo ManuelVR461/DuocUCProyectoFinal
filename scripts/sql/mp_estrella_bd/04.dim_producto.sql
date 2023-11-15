@@ -3,13 +3,11 @@ DROP TABLE IF EXISTS mp_estrella_db.dbo.dim_producto;
 CREATE TABLE mp_estrella_db.dbo.dim_producto (
 	id_producto      int not null,
 	producto         varchar(255),
-	id_rubro         int not null,
-	CONSTRAINT PK_producto PRIMARY KEY (id_producto),
-	CONSTRAINT FK_rubro_producto    FOREIGN KEY (id_rubro)      REFERENCES dim_rubro(id_rubro)
+	CONSTRAINT PK_producto PRIMARY KEY (id_producto)
 );
 
 INSERT INTO mp_estrella_db.dbo.dim_producto
-SELECT DISTINCT l.CodigoProductoONU, l.NombreProductoGenerico, r.id_rubro
+SELECT DISTINCT l.CodigoProductoONU, l.NombreProductoGenerico
   FROM mercadopublico.dbo.licitaciones l
  INNER JOIN mp_estrella_db.dbo.dim_rubro r
          ON r.rubro_primer_nivel = l.rubro1

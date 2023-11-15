@@ -30,4 +30,5 @@ SELECT DISTINCT
         ELSE '4' 
     END AS trimestre
 FROM mercadopublico.dbo.licitaciones
+WHERE fechaAdjudicacion BETWEEN '2007-01-01' AND '2024-01-01'
 GROUP BY fechaAdjudicacion;

@@ -2,12 +2,15 @@ DROP TABLE IF EXISTS mp_estrella_db.dbo.fact_licitacion;
 
 CREATE TABLE mp_estrella_db.dbo.fact_licitacion (
     id_fecha             int not null,
-    id_rubro             int not null,
+	id_rubro             int not null,
     id_producto          int not null,
     id_zona              int not null,
+	id_sector            int not null,
     id_unidad            int not null,
     id_proveedor         int,
-    codigo_moneda        CHAR(3) NOT NULL,
+    id_moneda            int NOT NULL,
+    id_tipo_adquisicion  int NOT NULL,
+	contar               int NOT NULL DEFAULT 1,
     estado_cerrada       int not null DEFAULT 0,
     estado_adjudicada    int not null DEFAULT 0,
     estado_decierta      int not null DEFAULT 0,
@@ -17,12 +20,15 @@ CREATE TABLE mp_estrella_db.dbo.fact_licitacion (
     monto_adjudicado_eur numeric(36, 0) not null,
     monto_adjudicado_utm numeric(36, 0) not null,
     monto_adjudicado_uf  numeric(36, 0) not null
-	CONSTRAINT FK_fecha_licitacion    FOREIGN KEY (id_fecha)      REFERENCES dim_fecha(id_fecha),
-	CONSTRAINT FK_rubro_licitacion    FOREIGN KEY (id_rubro)      REFERENCES dim_rubro(id_rubro),
-	CONSTRAINT FK_producto_licitacion FOREIGN KEY (id_producto)   REFERENCES dim_producto(id_producto),
-	CONSTRAINT FK_zona_licitacion     FOREIGN KEY (id_zona)       REFERENCES dim_zona(id_zona),
-	CONSTRAINT FK_unidad_licitacion   FOREIGN KEY (id_unidad)     REFERENCES dim_unidad(id_unidad),
-	CONSTRAINT FK_moneda_licitacion   FOREIGN KEY (codigo_moneda) REFERENCES dim_moneda(codigo_moneda)
+	CONSTRAINT FK_fecha_licitacion     FOREIGN KEY (id_fecha)      REFERENCES dim_fecha(id_fecha),
+	CONSTRAINT FK_rubro_licitacion     FOREIGN KEY (id_rubro)      REFERENCES dim_rubro(id_rubro),
+	CONSTRAINT FK_producto_licitacion  FOREIGN KEY (id_producto)   REFERENCES dim_producto(id_producto),
+    CONSTRAINT FK_proveedor_licitacion FOREIGN KEY (id_proveedor)  REFERENCES dim_proveedor(id_proveedor),
+	CONSTRAINT FK_zona_licitacion      FOREIGN KEY (id_zona)       REFERENCES dim_zona(id_zona),
+	CONSTRAINT FK_sector_licitacion    FOREIGN KEY (id_sector)     REFERENCES dim_sector(id_sector),
+	CONSTRAINT FK_unidad_licitacion    FOREIGN KEY (id_unidad)     REFERENCES dim_unidad(id_unidad),
+	CONSTRAINT FK_moneda_licitacion    FOREIGN KEY (id_moneda)     REFERENCES dim_moneda(id_moneda),
+	CONSTRAINT FK_tipo_adquisicion_licitacion    FOREIGN KEY (id_tipo_adquisicion)     REFERENCES dim_tipo_adquisicion(id_tipo_adquisicion)
 );
 
 WITH Temporal AS (
@@ -74,12 +80,14 @@ WITH Temporal AS (
                         ELSE -1
                     END
 		   END as id_zona,
+       s.id_sector,
        l.codigoUnidad as id_unidad,
        l.codigoProveedor as id_proveedor,
-       l.codigoMoneda as codigo_moneda,
-       0 as estado_cerrada,
-       0 as estado_adjudicada,
-       0 as estado_decierta,
+       CASE COALESCE(l.codigoMoneda, 'UTM') WHEN 'CLF' THEN 1 WHEN 'CLP' THEN 2 WHEN 'USD' THEN 3 WHEN 'UTM' THEN 4 WHEN 'EUR' THEN 5 WHEN 'CHF' THEN 6 END as id_moneda,
+       ta.id_tipo_adquisicion,
+       CASE WHEN l.codigoEstado = 6 OR l.codigoEstado BETWEEN 11 AND 14 THEN 1 ELSE 0 END as estado_cerrada,
+       CASE WHEN l.codigoEstado BETWEEN 8 AND 10 THEN 1 ELSE 0 END as estado_adjudicada,
+       CASE WHEN l.codigoEstado = 7 THEN 1 ELSE 0 END as estado_decierta,
        l.CantidadAdjudicada as cantidad_adjudicada,
        l.MontoLineaAdjudica * cm.VMCLP as monto_adjudicado_clp,
        l.MontoLineaAdjudica * cm.VMUSD as monto_adjudicado_usd,
@@ -95,8 +103,13 @@ WITH Temporal AS (
   INNER JOIN mercadopublico.mpp.ConversionMoneda cm
           ON cm.codigoMoneda = l.codigoMoneda
          AND cm.year * 100 + cm.month = floor(l.fechaAdjudicacion / 100)
+  INNER JOIN mp_estrella_db.dbo.dim_sector s
+          ON s.sector = l.sector
+  INNER JOIN mp_estrella_db.dbo.dim_tipo_adquisicion ta
+          ON ta.nombre = l.TipodeAdquisicion
+    WHERE l.Ofertaseleccionada = 1
 )
-INSERT INTO mp_estrella_db.dbo.fact_licitacion (id_fecha, id_rubro, id_producto, id_zona, id_unidad, id_proveedor, codigo_moneda, estado_cerrada, estado_adjudicada, estado_decierta, cantidad_adjudicada, monto_adjudicado_clp, monto_adjudicado_usd, monto_adjudicado_eur, monto_adjudicado_utm, monto_adjudicado_uf)
-SELECT id_fecha, id_rubro, id_producto, id_zona, id_unidad, id_proveedor, codigo_moneda, estado_cerrada, estado_adjudicada, estado_decierta, cantidad_adjudicada, monto_adjudicado_clp, monto_adjudicado_usd, monto_adjudicado_eur, monto_adjudicado_utm, monto_adjudicado_uf
+INSERT INTO mp_estrella_db.dbo.fact_licitacion (id_fecha, id_rubro, id_producto, id_zona, id_sector, id_unidad, id_proveedor, id_moneda, id_tipo_adquisicion, estado_cerrada, estado_adjudicada, estado_decierta, cantidad_adjudicada, monto_adjudicado_clp, monto_adjudicado_usd, monto_adjudicado_eur, monto_adjudicado_utm, monto_adjudicado_uf)
+SELECT id_fecha, id_rubro, id_producto, id_zona, id_sector, id_unidad, id_proveedor, id_moneda, id_tipo_adquisicion, estado_cerrada, estado_adjudicada, estado_decierta, cantidad_adjudicada, monto_adjudicado_clp, monto_adjudicado_usd, monto_adjudicado_eur, monto_adjudicado_utm, monto_adjudicado_uf
 FROM Temporal
 WHERE NumeroDeFila = 1;
