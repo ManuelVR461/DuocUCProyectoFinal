@@ -17,7 +17,7 @@
             <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAki7oiHJH/kuNlOWg7M6BRgAAAAAeAAAATQBwACAARQBzAHQAcgBlAGwAbABhACAARABiAAAAEGYAAAABAAAgAAAARlRXWxYHTacNrDhyb0yiieidOr2jGa+w/A5z3uRqmMQAAAAADoAAAAACAAAgAAAAn9qAb8K/DWnwzGgqoLSDNL6Rws6B09XaPgXVPxrVNvAQAAAAp4sAmCHMjtm5bTKwjULREUAAAADaKmZyo6zRQ0Ml8LFdvVCJodD9tLBp2jkL3AvdTWR9OQAwq0KwLFsIAm+vzN4HANCXPlYB9ON2zQ2o8Irzrhl6</Value>
           </ConfigurationSetting>
         </UserPasswords>
-        <TargetServer>asazure://eastus.asazure.windows.net/duocas</TargetServer>
+        <TargetServer>localhost</TargetServer>
         <TargetDatabase>mercadopublico_as</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

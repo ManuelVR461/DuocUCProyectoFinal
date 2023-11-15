@@ -1,6 +1,6 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d9d29492-d53c-4f1f-ad59-30397b3d6ace" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
-  <ID>Dim Proveedor</ID>
-  <Name>Dim Proveedor</Name>
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="04925b12-1700-4b56-aa96-4135d63ced71" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Sector</ID>
+  <Name>Dim Sector</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
   <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
   <Annotations>
@@ -19,13 +19,13 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_proveedor" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_sector" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1535" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ff050000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
-                <property name="LogicalObject" value="dbo_dim_proveedor" vartype="8" />
+                <property name="LogicalObject" value="dbo_dim_sector" vartype="8" />
               </ddsxmlobj>
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
@@ -68,51 +68,49 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7528bd3b-d00d-4ca0-bdca-d6760709b8e5">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="928658fb-4b84-44cc-b22e-9acfd5a7d23c">
     <DataSourceViewID>Mp Estrella Db</DataSourceViewID>
   </Source>
-  <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="24f8eed7-33e5-4b6f-9105-9b7b375e7316">
+  <ErrorConfiguration dwd:design-time-name="dbca2048-693a-4d53-bbf2-f0639cefb59e">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="9055c7c9-6e7d-421d-a26f-e18612ab6670">
-      <ID>Id Proveedor</ID>
-      <Name>Id Proveedor</Name>
+    <Attribute dwd:design-time-name="ad5e7b52-d629-436d-bad7-01f6aa1761f0">
+      <ID>Id Sector</ID>
+      <Name>Id Sector</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ab4e346d-d497-4d5b-9e38-2d67f0520bf8">
+        <KeyColumn dwd:design-time-name="cc281291-81db-4fd4-b804-ba7e9d7160b8">
           <DataType>Integer</DataType>
-          <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f36e485-894b-44f0-a780-35a9559780e1">
-            <TableID>dbo_dim_proveedor</TableID>
-            <ColumnID>id_proveedor</ColumnID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="522ec2e1-f492-4fcf-af16-37d6dc7fde6b">
+            <TableID>dbo_dim_sector</TableID>
+            <ColumnID>id_sector</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="7ded29ad-0a6a-4cf3-ad6e-d7a81ce365b8">
-          <AttributeID>Nombre</AttributeID>
-          <Name>Nombre</Name>
+        <AttributeRelationship dwd:design-time-name="486810ac-b14e-434f-8edc-815c79f9af35">
+          <AttributeID>Sector</AttributeID>
+          <Name>Sector</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="664f19dc-c42d-4dac-9d6d-b8e9f32b3790">
-      <ID>Nombre</ID>
-      <Name>Nombre</Name>
+    <Attribute dwd:design-time-name="0a3366a1-24a2-4ca2-8418-1d888e673db6">
+      <ID>Sector</ID>
+      <Name>Sector</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ea895c54-8db0-4616-8471-f573dc52f2cd">
+        <KeyColumn dwd:design-time-name="c01fd4dc-7f71-4f0d-ba7c-c051405f14e1">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="eba63f70-1cec-4bd9-a897-b5c7cc2a59ab">
-            <TableID>dbo_dim_proveedor</TableID>
-            <ColumnID>nombre</ColumnID>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9121511-3e62-4f23-af23-7cfb22f5db4e">
+            <TableID>dbo_dim_sector</TableID>
+            <ColumnID>sector</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="022c7772-90a4-4ec9-8a8a-de4a9ec10d94" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4d20e272-7ad2-491d-b6e4-22fcadc02b0f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Zona</ID>
   <Name>Dim Zona</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1963" scrolltop="-9622" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6967" y="21837" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5412" scrolltop="-11104" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13864" y="24800" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
             </font>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-1963</Value>
+      <Value>-5412</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-9622</Value>
+      <Value>-11104</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,43 +68,43 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="571a2bad-39a6-4e7f-a7bb-32c0464b8b9b">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="52adb214-f8e4-42db-87e7-0c45c3839db4">
     <DataSourceViewID>Mp Estrella Db</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="3c8266cd-3302-4ff8-bcba-86ebf0e754b5">
+  <ErrorConfiguration dwd:design-time-name="b58e3c99-04a2-4060-bd5b-834407f7a8a3">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="da0796d4-1cc6-4897-930c-5230256be6f8">
+    <Attribute dwd:design-time-name="6c5bc435-53f0-4568-a185-d903277b41e2">
       <ID>Id Zona</ID>
       <Name>Id Zona</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cdaa7698-3d43-495a-9cc7-fe07bb0cd626">
+        <KeyColumn dwd:design-time-name="25a5aa32-f0dc-4c46-ba43-3fb68684e667">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d53284cf-cc19-484c-b538-00fc1bc39d33">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9bea92ba-2f7d-4ad6-8e07-3b735113f69c">
             <TableID>dbo_dim_zona</TableID>
             <ColumnID>id_zona</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="ea48fa05-1182-4d77-93e7-f63a34896297">
+        <AttributeRelationship dwd:design-time-name="275c12b2-4173-45d8-ab3d-1baa898b454b">
           <AttributeID>Comuna</AttributeID>
           <Name>Comuna</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a211e258-ea46-4926-899b-1bb3a0602a51">
+        <AttributeRelationship dwd:design-time-name="4ab41ce8-adf3-414a-ab27-303a94f252b2">
           <AttributeID>Provincia</AttributeID>
           <Name>Provincia</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a01b8328-377f-442b-914b-68f8adcf9ca1">
+        <AttributeRelationship dwd:design-time-name="26271a8e-1bd8-4676-98cc-e50193803592">
           <AttributeID>Region</AttributeID>
           <Name>Region</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ac73ac11-f3cb-4d48-9b3e-bff85a95d723">
+        <AttributeRelationship dwd:design-time-name="7380e488-fcc4-4e14-bc75-47f401e06b7b">
           <AttributeID>Numero Region</AttributeID>
           <Name>Numero Region</Name>
         </AttributeRelationship>
@@ -113,14 +113,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8b569990-f04e-4782-acf7-c9e8895aa1ff">
+    <Attribute dwd:design-time-name="050f7fbd-4ed2-4091-9525-1d32b509ffea">
       <ID>Comuna</ID>
       <Name>Comuna</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="dfd79604-8ff9-43ff-a50f-76e67b4334d3">
+        <KeyColumn dwd:design-time-name="8484fd23-647b-4ddc-b6e5-9e39fdbe445a">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3996edd5-fc85-405f-a646-e67cef111519">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="621210d5-5c51-46e4-bf5e-d336d3be16ce">
             <TableID>dbo_dim_zona</TableID>
             <ColumnID>comuna</ColumnID>
           </Source>
@@ -129,14 +129,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5a9361de-13e2-4404-b5f2-bb9ef1b4d174">
+    <Attribute dwd:design-time-name="4eba2330-82f0-4560-bc32-0e089e4fc8f1">
       <ID>Provincia</ID>
       <Name>Provincia</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="985666b8-a13f-4c7d-b0a0-0777ea49c982">
+        <KeyColumn dwd:design-time-name="e98d6620-4449-48fb-800e-84e96a0e282d">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d364c519-0b98-4a3e-a28b-318418a83fc8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9763feb3-574b-46bf-9c4e-1cb07120b871">
             <TableID>dbo_dim_zona</TableID>
             <ColumnID>provincia</ColumnID>
           </Source>
@@ -145,14 +145,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4e27b13f-22db-45a0-b9e3-dc97fe226dd8">
+    <Attribute dwd:design-time-name="645e3a5f-ebc6-46cd-8b43-38010aad0efc">
       <ID>Region</ID>
       <Name>Region</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="65dbb276-aca1-410d-894a-8d59913f4651">
+        <KeyColumn dwd:design-time-name="1bdbb71e-eae5-4565-9dbe-98e94d1c81fa">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8804b7b0-5243-493d-8811-f347e37f0c8f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f163e685-df55-4074-b52a-1587df9dd07a">
             <TableID>dbo_dim_zona</TableID>
             <ColumnID>region</ColumnID>
           </Source>
@@ -161,13 +161,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a24d0cc0-fb75-41b9-aa4f-daaa2233794c">
+    <Attribute dwd:design-time-name="2172f251-e7a8-42f7-9713-d786be60b0b8">
       <ID>Numero Region</ID>
       <Name>Numero Region</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5945b1eb-952c-4a37-8fe9-d54a728d44f5">
+        <KeyColumn dwd:design-time-name="6b11b1f4-2fc4-46f4-abf8-6b1b27b43d07">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e731be8b-b2ea-4e65-9a2d-93ad0dcce7d4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0485dd24-afbb-4ae9-af71-ca27c35334a6">
             <TableID>dbo_dim_zona</TableID>
             <ColumnID>numero_region</ColumnID>
           </Source>

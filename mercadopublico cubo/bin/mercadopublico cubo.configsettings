@@ -12,25 +12,31 @@
     </DataSources>
     <Dimensions>
       <Dimension>
+        <ID>Dim Proveedor</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Unidad</ID>
+      </Dimension>
+      <Dimension>
         <ID>Dim Zona</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Fecha</ID>
+        <ID>Dim Sector</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Rubro</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Producto</ID>
+        <ID>Dim Tipo Adquisicion</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Proveedor</ID>
+        <ID>Dim Fecha</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Moneda</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Unidad</ID>
+        <ID>Dim Producto</ID>
       </Dimension>
     </Dimensions>
     <Cubes>

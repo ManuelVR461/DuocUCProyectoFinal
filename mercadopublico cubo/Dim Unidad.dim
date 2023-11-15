@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b6955086-383e-4c8b-934b-61bdeec23c4d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9e7b426b-a104-4a58-9d0c-9e56d978cf00" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Unidad</ID>
   <Name>Dim Unidad</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1963" scrolltop="-9622" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6967" y="21837" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5412" scrolltop="-11280" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13864" y="24800" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
             </font>
@@ -19,9 +19,9 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_unidad" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2593" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_unidad" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2240" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
-              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000210a0000" />
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000c0080000" />
             </control>
             <layoutobject>
               <ddsxmlobj>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-1963</Value>
+      <Value>-5412</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-9622</Value>
+      <Value>-11280</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,89 +68,89 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="143ea4cc-10d7-411c-a76a-49a0a126aa37">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dc8c7a1d-1c07-4716-93df-d3dce6cca154">
     <DataSourceViewID>Mp Estrella Db</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="c48900a9-456b-470c-be2b-fa4365accf64">
+  <ErrorConfiguration dwd:design-time-name="ce0e664a-2b61-4ce6-8ad6-6c80a3580532">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="a0b9c427-415f-4e1b-8ad5-7104ed68455e">
+    <Attribute dwd:design-time-name="e8a49bf2-64c9-4b4d-9c13-7798fce9a3d1">
       <ID>Id Unidad</ID>
       <Name>Id Unidad</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="dabef278-deef-4315-a16c-9d41e8cbad64">
+        <KeyColumn dwd:design-time-name="5c6642be-bdf5-4f79-94ae-347f7589bce4">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="69731adc-d805-4db0-b752-0429294b98c6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ffefc918-1ad3-407d-8b0e-4376a41ec552">
             <TableID>dbo_dim_unidad</TableID>
             <ColumnID>id_unidad</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="1f853aad-ceb4-403f-8f15-d5b065aa4dda">
-          <AttributeID>Organismo</AttributeID>
-          <Name>Organismo</Name>
+        <AttributeRelationship dwd:design-time-name="a2b0444c-0a68-4376-b49a-915474d53769">
+          <AttributeID>Rut</AttributeID>
+          <Name>Rut</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8418aa3d-66d7-47cb-bbe4-1751029cb20a">
-          <AttributeID>Sector</AttributeID>
-          <Name>Sector</Name>
-        </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a26e682d-c111-492f-bfcb-dc1c8b747b4e">
+        <AttributeRelationship dwd:design-time-name="fc59e157-682b-4f3b-a6e2-a016b7b36b33">
           <AttributeID>Nombre</AttributeID>
           <Name>Nombre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="57f62dc1-91e2-4d9e-92f6-c3beac827549">
+          <AttributeID>Organismo</AttributeID>
+          <Name>Organismo</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c9267549-c5c6-4881-9904-7463e5b68551">
-      <ID>Organismo</ID>
-      <Name>Organismo</Name>
+    <Attribute dwd:design-time-name="7b26f4f6-60a9-4c7a-9ccc-e552a6a4e7ea">
+      <ID>Rut</ID>
+      <Name>Rut</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="899f82cd-87ec-42b3-9370-d6ecef6e7f9e">
+        <KeyColumn dwd:design-time-name="b1a149b7-43e0-43bc-beb8-c3587fabfdb2">
           <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb750aea-983b-44fc-8703-0201973fdd1f">
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="18623e72-c505-45ed-bbde-bd35fee2a50e">
             <TableID>dbo_dim_unidad</TableID>
-            <ColumnID>organismo</ColumnID>
+            <ColumnID>rut</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="928a4d13-fc4f-47b8-9145-ca31c89e04f9">
-      <ID>Sector</ID>
-      <Name>Sector</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="993102b9-c1fb-496d-bb49-d91704e52c0b">
-          <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e588621-92d8-41c5-baf8-26e27e275059">
-            <TableID>dbo_dim_unidad</TableID>
-            <ColumnID>sector</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
-    <Attribute dwd:design-time-name="c227b9c3-7ac6-4cd2-a11e-95cf5e01aa95">
+    <Attribute dwd:design-time-name="5b23b5c7-73a9-49a9-b229-ee14d35dcf2e">
       <ID>Nombre</ID>
       <Name>Nombre</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c32943f9-8696-4237-85db-e5cecea6773b">
+        <KeyColumn dwd:design-time-name="4a922ad4-2045-4ee6-bb64-21ec046f0425">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a57aac10-fbfe-4d4f-9414-ab11cd457756">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7cff8625-3623-47cc-a4fb-72288c811230">
             <TableID>dbo_dim_unidad</TableID>
             <ColumnID>nombre</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ab474415-b353-4343-a217-6c00e8f429be">
+      <ID>Organismo</ID>
+      <Name>Organismo</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e440291d-6ff7-4145-a27c-dde6f534cda8">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e7b50b0-9584-4766-a471-073f140c3fe2">
+            <TableID>dbo_dim_unidad</TableID>
+            <ColumnID>organismo</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>

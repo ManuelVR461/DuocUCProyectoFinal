@@ -20,32 +20,40 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
+      <Name>Dim Proveedor.dim</Name>
+      <FullPath>Dim Proveedor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Unidad.dim</Name>
+      <FullPath>Dim Unidad.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Dim Zona.dim</Name>
       <FullPath>Dim Zona.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Fecha.dim</Name>
-      <FullPath>Dim Fecha.dim</FullPath>
+      <Name>Dim Sector.dim</Name>
+      <FullPath>Dim Sector.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Rubro.dim</Name>
       <FullPath>Dim Rubro.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Producto.dim</Name>
-      <FullPath>Dim Producto.dim</FullPath>
+      <Name>Dim Tipo Adquisicion.dim</Name>
+      <FullPath>Dim Tipo Adquisicion.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Proveedor.dim</Name>
-      <FullPath>Dim Proveedor.dim</FullPath>
+      <Name>Dim Fecha.dim</Name>
+      <FullPath>Dim Fecha.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Moneda.dim</Name>
       <FullPath>Dim Moneda.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Unidad.dim</Name>
-      <FullPath>Dim Unidad.dim</FullPath>
+      <Name>Dim Producto.dim</Name>
+      <FullPath>Dim Producto.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

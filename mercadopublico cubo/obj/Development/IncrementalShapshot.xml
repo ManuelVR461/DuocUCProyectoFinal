@@ -19,70 +19,84 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>QOW1AWbZWUNhklZdZL30B3pYYj8=02-11-2023 21:33:4802-11-2023 21:33:48</TimeStamp>
+        <TimeStamp>2aUMldFK3/EKDQoO5IlEMS6LPi8=03-11-2023 0:54:2603-11-2023 0:54:26</TimeStamp>
         <ID>
           <String>Mp Estrella Db</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>daGJPFnPO5OXq48g7n2rgVTavmI=02-11-2023 21:36:3602-11-2023 21:36:36</TimeStamp>
+        <TimeStamp>lPFbvKTfrr3T16GbuVIvPZocwFQ=14-11-2023 0:10:0614-11-2023 0:10:06</TimeStamp>
         <ID>
           <String>Mp Estrella Db</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>8HBLHfqs3CyH/B0EHFulCQVgWmE=02-11-2023 21:38:5502-11-2023 21:37:58</TimeStamp>
-        <ID>
-          <String>Dim Zona</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Z+B6mKg1oSW2r/bfbCXkPVKVYa4=02-11-2023 21:39:2602-11-2023 21:37:58</TimeStamp>
-        <ID>
-          <String>Dim Fecha</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>+vmg4LJmu/A5twohtOkpW8+o+Lw=02-11-2023 21:39:4102-11-2023 21:37:58</TimeStamp>
-        <ID>
-          <String>Dim Rubro</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>zJMnxRi0gewyzIXtgFwZe7YnaxU=02-11-2023 21:39:5102-11-2023 21:37:58</TimeStamp>
-        <ID>
-          <String>Dim Producto</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>OFgD/LJuJ2L4KDnA7echiHpNY0k=02-11-2023 21:40:0302-11-2023 21:37:58</TimeStamp>
+        <TimeStamp>uCvunt16Sm9EXNKbxxoP366Wxws=14-11-2023 0:12:3314-11-2023 0:11:10</TimeStamp>
         <ID>
           <String>Dim Proveedor</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>gfx13ao9ZeESZbQT7Jc8rkNRWqM=02-11-2023 21:40:1202-11-2023 21:37:58</TimeStamp>
+        <TimeStamp>FAOTlyboKZFGT5kqOGeZVmv7j6Q=14-11-2023 0:12:2614-11-2023 0:11:10</TimeStamp>
+        <ID>
+          <String>Dim Unidad</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>crreolymud2ofHUOYI7jmWCnwrA=14-11-2023 0:12:1714-11-2023 0:11:10</TimeStamp>
+        <ID>
+          <String>Dim Zona</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ydHFg2voWL51UBeIs0BS8vJmC98=14-11-2023 0:12:0914-11-2023 0:11:10</TimeStamp>
+        <ID>
+          <String>Dim Sector</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>N8FZMXykrhtEVz4B/Nsp1F02jF4=14-11-2023 0:11:5914-11-2023 0:11:10</TimeStamp>
+        <ID>
+          <String>Dim Rubro</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ytI4Gws9tneomco5XZkH9OXuC1I=14-11-2023 0:11:5014-11-2023 0:11:10</TimeStamp>
+        <ID>
+          <String>Dim Tipo Adquisicion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0wM1ZAfmj31H1tvb9koaet5ylgk=14-11-2023 0:11:4214-11-2023 0:11:10</TimeStamp>
+        <ID>
+          <String>Dim Fecha</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>j3xbZGSY/WPDvLhSfuaDrW5l62o=14-11-2023 0:11:3214-11-2023 0:11:10</TimeStamp>
         <ID>
           <String>Dim Moneda</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>TE6AzpL2A6Emenz1pVjVoZhFFHc=02-11-2023 21:40:5402-11-2023 21:37:58</TimeStamp>
+        <TimeStamp>9y4dV4lf948vf64DnyIVGYevOvc=14-11-2023 0:11:2314-11-2023 0:11:10</TimeStamp>
         <ID>
-          <String>Dim Unidad</String>
+          <String>Dim Producto</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>z6BKg6DqpTnqkyGgmDr3OKvROKo=02-11-2023 21:40:5402-11-2023 21:37:58NcMb/uwNWS9jksHMSD/SbD1/jGQ=02-11-2023 21:37:5802-11-2023 21:37:58</TimeStamp>
+        <TimeStamp>qY2fePH2bxmuzc0Xs79vO97Nw9E=14-11-2023 0:12:3314-11-2023 0:11:10usBaJK2e0qzRlpjurLkqBCQLSfk=14-11-2023 0:11:1014-11-2023 0:11:10</TimeStamp>
         <ID>
           <String>Mp Estrella Db</String>
         </ID>
@@ -90,7 +104,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>a4mWEbOLp2rgZwmhe4G8Nhjw1Jk=02-11-2023 21:17:3502-11-2023 21:17:35</TimeStamp>
+      <TimeStamp>R/ESK/aSsdDAj1NsCwWF/2/X0o0=14-11-2023 0:11:1303-11-2023 0:54:26</TimeStamp>
       <ID>
         <String>mercadopublico_as</String>
       </ID>
@@ -99,5 +113,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2023-11-03T01:14:35.103333Z</LastDeployed>
+  <LastDeployed>2023-11-14T03:12:54.05Z</LastDeployed>
 </DeploymentSnapshot>

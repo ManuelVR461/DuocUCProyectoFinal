@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7a43ff62-b47a-48b6-b139-4169f4869be2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fa3cd1fc-c5d3-463f-a354-39a5901c9d00" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dim Rubro</ID>
   <Name>Dim Rubro</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1602" scrolltop="-9798" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6967" y="21837" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5051" scrolltop="-11280" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13864" y="24800" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
             </font>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-1602</Value>
+      <Value>-5051</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-9798</Value>
+      <Value>-11280</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,39 +68,39 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="47b31019-3969-4763-88ec-acc908234da8">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="18992626-f8d8-4453-b630-22fbe7db4ccb">
     <DataSourceViewID>Mp Estrella Db</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="6d4b3480-db9d-41f8-b5a7-1512bab76222">
+  <ErrorConfiguration dwd:design-time-name="dcb50583-d620-4247-848b-a9b968800abf">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="7e7bf7d4-c606-4f31-8903-6ceb223524a6">
+    <Attribute dwd:design-time-name="91f9351c-4c07-4e6d-be40-ac8853b72c21">
       <ID>Id Rubro</ID>
       <Name>Id Rubro</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4a81936a-c5a2-45da-9a5a-8fe38c532e4a">
+        <KeyColumn dwd:design-time-name="263db349-ef32-4713-b92e-7572de6be9c6">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3a43104-1be5-42ad-8b4c-5b96b2ee1b73">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="840c9a25-3a0f-4604-96b9-e7c8f5d4e45a">
             <TableID>dbo_dim_rubro</TableID>
             <ColumnID>id_rubro</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="778fb4a4-3f54-421d-ba52-bd43fce3c508">
+        <AttributeRelationship dwd:design-time-name="bb7048ec-2916-47ef-8aeb-d45d617f61f0">
           <AttributeID>Rubro Primer Nivel</AttributeID>
           <Name>Rubro Primer Nivel</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cce385bd-9e61-439a-bc91-09c0ae1e048b">
+        <AttributeRelationship dwd:design-time-name="776ccccf-4a7c-42b6-b538-e73ee694a01a">
           <AttributeID>Rubro Segundo Nivel</AttributeID>
           <Name>Rubro Segundo Nivel</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="801c9ee2-6ed4-453b-914a-e82acff6bfa8">
+        <AttributeRelationship dwd:design-time-name="bb2d669c-ae50-42a4-9b5e-d97f0b75335c">
           <AttributeID>Rubro Tercer Nivel</AttributeID>
           <Name>Rubro Tercer Nivel</Name>
         </AttributeRelationship>
@@ -109,14 +109,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fc0086db-8159-4fde-bfe1-713e160c188f">
+    <Attribute dwd:design-time-name="914e3566-936e-44f7-a830-ea3c10ef82f3">
       <ID>Rubro Primer Nivel</ID>
       <Name>Rubro Primer Nivel</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ee1d00fb-593c-4bea-ba98-0afd8ac93d3a">
+        <KeyColumn dwd:design-time-name="e6bf22ce-bac5-458a-b2b0-68428ea1c5f9">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d71909e9-5168-4d2d-adae-aede45455a4c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a999acf2-1943-4244-857f-3f72af4bb49d">
             <TableID>dbo_dim_rubro</TableID>
             <ColumnID>rubro_primer_nivel</ColumnID>
           </Source>
@@ -125,14 +125,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2af8feb0-50a7-429c-a52c-07ec71e915a4">
+    <Attribute dwd:design-time-name="a36e623f-fb47-4211-ae6b-b169358e3749">
       <ID>Rubro Segundo Nivel</ID>
       <Name>Rubro Segundo Nivel</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4778d9fe-9bfa-4d79-92b3-4ac045ab5ccd">
+        <KeyColumn dwd:design-time-name="d31f3ddd-0252-4b12-bdf8-6d4bd417a19a">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="60385f2d-44e9-41be-b505-590c0b38467f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b48c1884-96d9-481a-9bb9-745e9702c606">
             <TableID>dbo_dim_rubro</TableID>
             <ColumnID>rubro_segundo_nivel</ColumnID>
           </Source>
@@ -141,14 +141,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a9e999d2-8f9a-4b9b-be09-93bb2f16702f">
+    <Attribute dwd:design-time-name="7748f777-596d-453e-97a1-b546e61b98ca">
       <ID>Rubro Tercer Nivel</ID>
       <Name>Rubro Tercer Nivel</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="80fa413b-9d34-45d4-b877-32822e42ad55">
+        <KeyColumn dwd:design-time-name="c82b106e-2735-4fec-a634-8392b550d810">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="489e9619-b19b-474b-a5af-b71166b50cb7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f1abeb6-a240-4f8f-b529-5a385782d9d5">
             <TableID>dbo_dim_rubro</TableID>
             <ColumnID>rubro_tercer_nivel</ColumnID>
           </Source>
